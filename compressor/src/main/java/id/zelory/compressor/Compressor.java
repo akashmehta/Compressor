@@ -21,10 +21,10 @@ public class Compressor {
     private static volatile Compressor INSTANCE;
     private Context context;
     //max width and height values of the compressed image is taken as 612x816
-    private float maxWidth = 612.0f;
-    private float maxHeight = 816.0f;
+    private float maxWidth = 1200f;
+    private float maxHeight = 1200f;
     private Bitmap.CompressFormat compressFormat = Bitmap.CompressFormat.JPEG;
-    private int quality = 80;
+    private int quality = 95;
     private String destinationDirectoryPath;
 
     private Compressor(Context context) {
